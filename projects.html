@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 1rem 2rem;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      color: #60a5fa;
+    }
+
+    .projects {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .projects h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .project {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h2 {
+      color: #3b82f6;
+      margin-bottom: 0.5rem;
+    }
+
+    .project p {
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    .project a {
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: bold;
+    }
+
+    .project-tags {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      background-color: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="projects">
+      <h1>My Projects</h1>
+      <div class="project-list">
+        <div class="project">
+          <h2>Personal Portfolio Website</h2>
+          <p>A fully responsive and animated portfolio site using HTML, CSS, and JavaScript. Features multiple pages, smooth scroll, and interactive elements.</p>
+          <a href="index.html">View Project</a>
+          <div class="project-tags">HTML, CSS, JavaScript</div>
+        </div>
+        <div class="project">
+          <h2>My Favourite Games and Films website</h2>
+          <p>This is a website which tells a short descriptionabout interesting games and films.</p>
+          <a href="project 2.html">View Project</a>
+          <div class="project-tags">HTML, JS, CSS</div>
+        </div>
+        <div class="project">
+          <h2>Top 10 latest and famous Movies Website</h2>
+          <p>This is a site which is created using HTML ,CSS and Javascript which tells you the top 10 latest and super hit movies of the year 2025.</p>
+          <a href="project 3.html">View Project</a>
+          <div class="project-tags">HTML, JavaScript, CSS</div>
+        </div>
+        
+        
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>

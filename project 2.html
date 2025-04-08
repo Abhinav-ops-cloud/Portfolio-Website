@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Games & Films</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background-color: rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    nav button {
+      padding: 1rem 2rem;
+      margin: 0 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #ffffff33;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #ffffff66;
+    }
+
+    .content-section {
+      display: none;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .card-info h3 {
+      margin: 0 0 0.5rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0,0,0,0.2);
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎮 My Favorite Games & Films 🎬</h1>
+  </header>
+
+  <nav>
+    <button onclick="showSection('games')">Games</button>
+    <button onclick="showSection('films')">Films</button>
+  </nav>
+
+  <section id="games" class="content-section active">
+    <div class="card">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.Vr7Jn41VpC0Gld5yMyL2EgHaHa&pid=Api&P=0&h=180" alt="Blockman Go">
+      <div class="card-info">
+        <h3>Blockman Go</h3>
+        <p>It is a free-to-play multiplayer game platform developed by Blockman GO Studio. It combines sandbox-style creativity with mini-games, social features, and even some role-playing elements. Think of it like Minecraft meets Roblox, with a bunch of mini-games and social hangout vibes.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.qhebmIikJyItWzu3VAM3GgHaJP&pid=Api&P=0&h=180" alt="GTA 4">
+      <div class="card-info">
+        <h3>Grand Theft Auto IV</h3>
+        <p>It is a well known game in gaming industry by Rockstar Games with really excellent graphics.The reason behind I like this game more than GTA 5 is its driving Physics.GTA IV’s cars feel like they have real weight. Crashes are intense. Turning at high speed? You’ll feel the slide.
+
+          GTA V simplified driving to make it more "fun," but lost that realism. </p>
+      </div>
+    </div>
+    <!-- Add more game cards as needed -->
+  </section>
+
+  <section id="films" class="content-section">
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.81mfC_3cdU3ZC_i7RNykGQHaJ4&pid=Api&P=0&h=180" alt="Film 1">
+      <div class="card-info">
+        <h3>Flying Jatt</h3>
+        <pre>When a timid young man unexpectedly gains superpowers, he becomes India's unlikeliest superhero. As he battles
+an evil industrialist and a deadly villain, he must also overcome his fears and live up to his destiny — 
+all while staying true to his roots.
+Genre: Action | Comedy | Superhero
+Starring: Tiger Shroff, Jacqueline Fernandez, Nathan Jones</pre>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://www.themoviedb.org/t/p/original/exbyTbrvRUDKN2mcNEuVor4VFQW.jpg" alt="Film 2">
+      <div class="card-info">
+        <h3>Kung Fu Hustle</h3>
+        <p>In a chaotic 1940s Shanghai, a wannabe gangster gets caught in a war between ruthless mobsters and hidden kung fu masters. Packed with wild action, slapstick comedy, and jaw-dropping martial arts, Kung Fu Hustle is a hilarious, stylish blend of humor and high-flying kung fu madness.<br>
+          Genre: Action | Comedy | Martial Arts<br>
+          Directed by: Stephen Chow
+          
+          </p>
+      </div>
+    </div>
+    <!-- Add more film cards as needed -->
+  </section>
+
+  <footer>
+    &copy Mr Bulbasaur. All rights reserved.
+  </footer>
+
+  <script>
+    function showSection(section) {
+      document.querySelectorAll('.content-section').forEach(sec => {
+        sec.classList.remove('active');
+      });
+      document.getElementById(section).classList.add('active');
+    }
+  </script>
+</body>
+</html>

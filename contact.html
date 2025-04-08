@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      color: #333;
+    }
+
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 1rem 2rem;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      color: #60a5fa;
+    }
+
+    .contact-section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .contact-section h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-box {
+      flex: 1;
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .contact-box h3 {
+      margin-top: 0;
+      color: #3b82f6;
+    }
+
+    .contact-form {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: #3b82f6;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #2563eb;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .social-links a {
+      margin: 0 1rem;
+      font-size: 1.5rem;
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: #1d4ed8;
+    }
+
+    footer {
+      background-color: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1>Get in Touch</h1>
+
+      <div class="contact-info">
+        <div class="contact-box">
+          <h3>Email</h3>
+          <p>webdeveloperabhinav@gmail.com</p>
+        </div>
+        <div class="contact-box">
+          <h3>Phone</h3>
+          <p>+91 97*****967</p>
+        </div>
+        <div class="contact-box">
+          <h3>Location</h3>
+          <p>New Delhi, Delhi, India</p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="social-links">
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">Telegram</a>
+        <a href="#" target="_blank">Snapchat</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
